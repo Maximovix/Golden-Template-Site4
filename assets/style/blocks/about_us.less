@@ -1,0 +1,79 @@
+// main: ../style.less;
+
+.about_us_inner {
+	margin-top: 6rem;
+
+}
+
+.about_us_item {
+	text-align: center;
+
+	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+
+		width: 3px;
+		height: 90px;
+
+		background-color: #F1F1F1;
+
+		margin: 0 auto;
+		margin-top: -5px;
+	}
+
+	&:last-child {
+		&:after {
+			display: none;
+		}
+	}
+
+	&:nth-child(odd) {
+		.about_us_content {
+			left: 2rem;
+			text-align: right;
+		}
+	}
+
+	&:nth-child(even) {
+		.about_us_content {
+			right: 2rem;
+			text-align: left;
+		}
+	}
+}
+
+.about_us_image {
+	width: 170px;
+	height: 170px;
+
+	border: 8px solid #F1F1F1; 
+	border-radius: 50%;
+
+	transition: border .3s linear;
+
+	&:hover {
+		border-color: @yellow;
+	}
+}
+
+.about_us_content {
+	width: 33%;
+	position: absolute;
+	top: 0;
+}
+
+.about_us_header {
+	font-size: 1.2rem;
+	font-family: @mont;
+	font-weight: 700;
+	line-height: 1.5;
+	color: @title;
+}
+
+.about_us_text {
+	margin-top: .8rem;
+	color: @greyText;
+	line-height: 1.5;
+}
