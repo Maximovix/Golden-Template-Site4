@@ -1,0 +1,56 @@
+//main: ../style.less;
+
+.portfolio {
+	background-color: #F7F7F7;
+}
+
+.portfolio_inner {
+	margin-top: 1rem;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.portfolio_item {
+	margin-top: 3rem;
+
+	width: 30%;
+	height: 400px;
+
+	overflow: hidden;
+
+	background-color: #fff;
+
+	border-radius: 3px;
+
+	transition: background .3s linear;
+
+	&:hover {
+		background-color: @yellow;
+	}
+
+}
+
+.portfolio_image {
+	height: 18rem;
+}
+
+.portfolio_content {
+	text-align: center;
+	padding: 1.5rem 0;
+}
+
+.portfolio_title {
+	font-size: 1.2rem;
+	font-family: @mont;
+	font-weight: 700;
+	color: @title;
+}
+
+.portfolio_prof {
+	margin-top: .2rem;
+
+	font-style: italic;
+	color: @greyText;
+}

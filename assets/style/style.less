@@ -1,0 +1,51 @@
+@import 'vars';
+
+body {
+	margin: 0;
+	background: #fff;
+	font-size: 14px;
+	font-family: @roboto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+section {
+	padding: 6.375rem 0;
+}
+
+/* Title */
+.title_inner {
+	text-align: center;
+}
+
+.title {
+	font-family: @mont;
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: @title;
+}
+
+.subtitle {
+	font-size: 1rem;
+	font-style: italic;
+	color: @greyText;
+
+	margin-top: .5rem;
+}
+
+@import 'blocks/intro';
+@import 'blocks/services';
+@import 'blocks/portfolio';
