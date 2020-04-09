@@ -1,0 +1,91 @@
+// main: ../style.less;
+
+.contact {
+
+	background: @title url(../images/contact/World.png) no-repeat;
+	background-size: cover;
+
+	background-position: 75rem 10rem;
+
+	& .title {
+		color: #fff;
+	}
+}
+
+.contact_inner {
+	margin-top: 5.5rem;
+}
+
+.form_inner {
+	display: flex;
+	justify-content: space-around;
+}
+
+.form_item {
+	width: 47%;
+
+	input, textarea {
+		display: block;
+		width: 100%;
+
+		border: 2px solid @greyText;
+		border-radius: 5px;
+
+		font-family: @mont;
+		font-weight: 700;
+		color: @greyText;
+
+		text-indent: 10px;
+		
+		transition: border .3s linear;
+
+		&:focus {
+			outline: none;
+			border-color: @yellow;
+		}
+
+		&:hover {
+			border-color: @yellow;
+		}
+	}
+
+	input {
+		margin-top: 2rem;
+		padding: 1rem 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	textarea {
+		height: 100%;
+		padding-top: .9rem;
+	} 
+}
+
+.form_submit {
+	text-align: center;
+
+	margin-top: 1.8rem;
+}
+
+.contact_submit {
+	background-color: @yellow;
+	border: none;
+	border-radius: 5px;
+
+	font-size: 1.1rem;
+	font-family: @mont;
+	font-weight: 700;
+	color: #fff;
+
+	padding: 1.3rem 2.7rem;
+
+	transition: color .3s linear, background .3s linear;
+
+	&:hover {
+		color: @yellow;
+		background-color: #fff;
+	}
+}
