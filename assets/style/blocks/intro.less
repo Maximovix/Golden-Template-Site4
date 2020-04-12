@@ -27,6 +27,19 @@
 	z-index: 10;
 }
 
+.header.black {
+	background-color: @title;
+
+	.header_inner {
+		margin-top: 0;
+		margin: .5rem 0;
+	}
+
+	.nav_toggle {
+		top: 1.3rem;
+	}
+}
+
 .header_inner {
 	display: flex;
 	justify-content: space-around;
@@ -38,6 +51,8 @@
 .logo {
 	font-size: 1.85rem;
 	color: @yellow;
+
+	z-index: 50;
 }
 
 .nav_link {
@@ -59,14 +74,63 @@
 	}
 }
 
-.intro_inner {
+.nav_toggle {
+	display: none;
+	background: 0;
+	border: 0;
+	padding: 9px 20px;
 
+	cursor: pointer;
+
+	position: fixed;
+
+	top: 1.3rem;
+	right: .5rem;
+
+	z-index: 50;
+}
+
+.nav_toggle_item {
+	display: block;
+	width: 30px;
+	height: 3px;
+
+	background-color: #fff;
+
+	font-size: 0;
+	color: transparent;
+	position: relative;
+
+	&:after,
+	&:before {
+		content: "";
+		width: 70%;
+		height: 100%;
+
+		position: absolute;
+		left: 0;
+		z-index: 1;
+
+		background-color: #fff;
+	}
+
+	&:after {
+		width: 90%;
+		top: 8px;
+	}
+
+	&:before {
+		top: -8px;
+	}
+}
+
+.intro_inner {
 	text-align: center;
 	color: #fff;
 
 	position: absolute;
 	top: 21rem;
-	z-index: 10;
+	z-index: 5;
 }
 
 .intro_title {

@@ -13,12 +13,15 @@
 		<div class="header_inner">
 			<div class="logo">Golden</div>
 				<nav class="nav" id="nav">
-					<a href="#" class="nav_link">Home</a>
-					<a href="#" class="nav_link">Services</a>
-					<a href="#" class="nav_link">Portfolio</a>
-					<a href="#" class="nav_link">About</a>
-					<a href="#" class="nav_link">Contact</a>
+					<a href="#" data-scroll="#intro" class="nav_link">Home</a>
+					<a href="#" data-scroll="#services" class="nav_link">Services</a>
+					<a href="#" data-scroll="#portfolio" class="nav_link">Portfolio</a>
+					<a href="#" data-scroll="#about_us" class="nav_link">About</a>
+					<a href="#" data-scroll="#contact" class="nav_link">Contact</a>
 				</nav>
+				<div class="nav_toggle" id="nav_toggle">
+					<div class="nav_toggle_item" id="nav_toggle_item"></div>
+				</div>
 		</div>
 	</header>
 
@@ -32,7 +35,7 @@
 		</div>
 	</div>
 
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="title_inner">
 				<div class="title">SERVICES</div>
@@ -58,7 +61,7 @@
 		</div>
 	</section> <!-- services -->
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="title_inner">
 				<div class="title">OUR PORTFOLIO</div>
@@ -117,7 +120,7 @@
 		</div>
 	</section> <!-- portfolio -->
 
-	<section class="about_us">
+	<section class="about_us" id="about_us">
 		<div class="container">
 			<div class="title_inner">
 				<div class="title">ABOUT US</div>
@@ -247,7 +250,7 @@
 		</div>
 	</section> <!-- platform -->
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="title_inner">
 				<div class="title">CONTACT US</div>
@@ -287,6 +290,7 @@
 			</div>
 		</div>
 	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

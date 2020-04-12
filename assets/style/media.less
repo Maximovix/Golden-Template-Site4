@@ -69,7 +69,32 @@
 
 	/* Header */
 	.header_inner {
-		display: block;
+		display: flex;
+		justify-content: space-between;
+		margin: .5rem 0;
+	}
+
+	.nav_toggle {
+		display: block; 
+	}
+
+	.nav_toggle_item.active {
+		background: transparent;
+
+		&:after,
+		&:before {
+			display: block;
+			width: 100%;
+			top: 0px;
+		}
+
+		&:after {
+			transform: rotate(45deg);
+		}
+
+		&:before {
+			transform: rotate(-45deg);
+		}
 	}
 
 	.logo {
@@ -78,6 +103,45 @@
 
 	.nav {
 		display: none;
+	}
+
+	.nav.active {
+		display: block;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		background-color: @title;
+
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+
+		text-align: center;
+
+		padding-top: 4rem; 
+
+
+		.nav_link {
+			margin-left: 0;
+
+			padding: 2rem 0;
+
+			border-bottom: 2px solid #fff;
+
+			transition: border .3s linear;
+
+			&:first-child {
+				border-top: 2px solid #fff;
+			} 
+
+			&:hover {
+				border-color: @yellow;
+			}
+		}
 	}
 
 	/* Intro */
