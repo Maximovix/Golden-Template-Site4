@@ -58,6 +58,27 @@
 	}
 }
 
+.about_us_item_inner {
+	display: flex;
+	align-items: center;
+
+	text-align: center;
+
+	width: 170px;
+	height: 170px;
+
+	margin: 0 auto;
+
+	border: 8px solid #F1F1F1; 
+	border-radius: 50%;
+	background-color: @yellow;
+
+	&:hover {
+		transition: border .3s linear;
+		border-color: @yellow;
+	}
+}
+
 .about_us_content {
 	width: 33%;
 	position: absolute;
@@ -81,11 +102,7 @@
 .about_us_text_last {
 	text-align: center;
 
-	width: 10%;
-
-	position: absolute;
-	top: 20%;
-	left: 44%;
+	width: 100%;
 
 	font-size: 1.2rem;
 	font-family: @mont;
