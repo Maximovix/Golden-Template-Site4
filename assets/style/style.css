@@ -520,6 +520,8 @@ section {
   font-weight: 700;
   color: #fff;
   padding: 1.3rem 2.7rem;
+  cursor: pointer;
+  outline: none;
   transition: color .3s linear, background .3s linear;
 }
 .contact_submit:hover {
