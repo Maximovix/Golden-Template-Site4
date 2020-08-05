@@ -13,14 +13,34 @@
 	width: 31.5%;
 }
 
-.services_icon {
+.services_image {
+	cursor: pointer;
+
 	width: 66px;
 	height: 66px;
 
 	border: 3px solid @yellow;
 	border-radius: 50%;
 
+	position: relative;
+
 	margin: 0 auto;
+
+	transition: background .3s ease, border .3s ease;
+
+	&:hover {
+		background-color: @title;
+		border-color: @title;
+	}
+}
+
+.services_icon {
+	display: block;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 .services_title {

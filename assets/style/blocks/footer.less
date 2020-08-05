@@ -21,7 +21,11 @@
 	display: flex;
 }
 
-.footer_social_item {
+.footer_item {
+	display: block;
+
+	cursor: pointer;
+
 	width: 40px;
 	height: 40px;
 
@@ -29,4 +33,21 @@
 
 	border-radius: 50%;
 	background-color: #000;
+
+	position: relative;
+
+	transition: background .3s linear;
+
+	&:hover {
+		background-color: @yellow;
+	}
+}
+
+.footer_icon {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%,-50%);
 }

@@ -15,11 +15,12 @@ $(function () {
 
 				$("#nav_toggle_item").removeClass("active");
 				$("#nav").removeClass("active");
+				$("body").removeClass('hide');
 
 				headerH = header.innerHeight();
 
 				$('html,body').animate({
-					scrollTop: blockOffSet - headerH
+					scrollTop: blockOffSet - 75
 				}, 700);
 		});
 
@@ -32,7 +33,7 @@ $(function () {
 
 
 	function checkScroll(scrollPosition,introH) {
-		if (scrollPosition >= introH) {
+		if (scrollPosition >= introH - 100) {
 			header.addClass("black");
 		} else {
 			header.removeClass("black");
@@ -45,6 +46,7 @@ $(function () {
 
 			$("#nav").toggleClass("active");
 			$("#nav_toggle_item").toggleClass('active');
+			$("body").toggleClass('hide');
 		});
 })
 
